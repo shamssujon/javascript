@@ -25,6 +25,10 @@ console.log(dollerRate);
 dollerRate /= 2; // same as dollerRate = dollerRate / 2;
 console.log(dollerRate);
 
-// Increase/Decrease value by 1
+// Increase value by 1
 dollerRate++; // same as dollerRate = dollerRate + 1;
+console.log(dollerRate);
+
+// Decrease value by 1
 dollerRate--; // same as dollerRate = dollerRate - 1;
+console.log(dollerRate);
