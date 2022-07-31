@@ -13,6 +13,17 @@ var number = 123;
 
 */
 
+// ### Variable types
+
+// Number
 var age = 27;
 var height = 5.5;
 var weight = 70;
+
+// String
+var name = "Shams Sujon";
+var designation = 'Frontend Developer';
+
+// Boolean
+var single = true;
+var married = false;
