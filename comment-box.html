@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment box</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font: 18px/1.5 sans-serif;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .comment {
+            background: #eee;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .comment+.comment {
+            margin-top: 1rem;
+        }
+
+        .comment-form {
+            margin-top: 2rem;
+        }
+
+        #comment-box {
+            width: 100%;
+            font-size: inherit;
+            font-family: inherit;
+            padding: 1rem;
+        }
+
+        #post-comment-btn {
+            background-color: #111;
+            color: white;
+            font-size: inherit;
+            font-family: inherit;
+            padding: 1rem;
+            border: 1px solid;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #post-comment-btn:hover {
+            background-color: #000;
+        }
+
+        #post-comment-btn:active {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <section>
+            <h1>Recent comments</h1>
+            <div class="comments">
+                <div class="comment">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus incidunt reprehenderit, rem nisi
+                    sequi architecto perferendis necessitatibus laborum animi reiciendis?
+                </div>
+                <div class="comment">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus incidunt reprehenderit.
+                </div>
+                <div class="comment">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, saepe dicta natus, maiores
+                    sit expedita rerum sed veniam praesentium maxime, dolores labore aut amet ab unde quia quae.
+                    Excepturi, ipsam?
+                </div>
+            </div>
+
+            <div class="comment-form">
+                <label for="comment-box">Add a new comment</label>
+                <textarea name="" id="comment-box" rows="5"></textarea>
+                <button id="post-comment-btn">Post a comment</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="JS-DOM/comment-box.js"></script>
+</body>
+
+</html>

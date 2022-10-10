@@ -6,21 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .section {
+            padding: 1rem;
+        }
+        section + section {
+            margin-top: 2rem;
+        }
+        .bg-lightcoral {
+            background-color: lightcoral;
+        }
+    </style>
 </head>
 
 <body>
-    Open console.
-    <!-- <script src="string/case-conversion.js"></script> -->
-    <!-- <script src="string/search-in-string.js"></script> -->
-    <!-- <script src="string/split-join.js"></script> -->
-    <!-- <script src="Math.js"></script> -->
-    <!-- <script src="array/max-in-array.js"></script> -->
-    <!-- <script src="array/min-in-array.js"></script> -->
-    <!-- <script src="js-assignment-1/radianToDegree.js"></script> -->
-    <!-- <script src="js-assignment-1/isJavaScriptFile.js"></script> -->
-    <!-- <script src="js-assignment-1/oilPrice.js"></script> -->
-    <!-- <script src="js-assignment-1/publicBusFare.js"></script> -->
-    <script src="js-assignment-1/isBestFriend.js"></script>
+    <main id="container">
+        <h1 id="title">Javascript DOM</h1>
+        <section class="section bg-lightcoral">
+            <h3 id="subtitle">Javascript Core Concepts:</h3>
+
+            <ol id="js-concept-list">
+                <li class="list-item">Variables</li>
+                <li class="list-item">Array</li>
+                <li class="list-item">Objects</li>
+                <li class="list-item">Functions</li>
+            </ol>
+        </section>
+    </main>
+    <script src="JS-DOM/dynamic-style.js"></script>
+    <!-- <script src="JS-DOM/dynamic-html.js"></script> -->
+    <!-- <script src="JS-DOM/loop.js"></script> -->
+    <!-- <script src="JS-DOM/dom-tree.js"></script> -->
+    <script src="JS-DOM/create-append.js"></script>
 </body>
 
 </html>

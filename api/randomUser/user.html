@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Random User</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: sans-serif;
+                max-width: 1000px;
+                margin: auto;
+                padding: 2rem;
+            }
+            #users-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+            .user {
+                background: #eee;
+                padding: 1rem;
+                display: flex;
+                gap: 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Random users</h1>
+        </header>
+
+        <main>
+            <div id="users-container"></div>
+        </main>
+
+        <script src="user.js"></script>
+    </body>
+</html>
